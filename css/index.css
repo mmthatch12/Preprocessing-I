@@ -86,7 +86,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 62.5%;
+  font-size: 100%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -141,14 +141,31 @@ body {
 }
 .navstyle1 {
   text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.headerstyle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .h1style {
   font-size: 4rem;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-bottom: 0.5rem;
+}
+.h4style {
+  font-size: 2rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-bottom: 0.5rem;
+}
+.sectionstyle {
+  border: 0.1rem solid black;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .container {
-  width: 800px;
+  width: 1000px;
   background: lightgrey;
+  margin: 0 auto;
 }
 .container nav {
   display: flex;
@@ -157,22 +174,53 @@ body {
 }
 .container nav a {
   text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .container header {
-  width: 60%;
-  border: 10px dotted blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border: 0.1rem solid black;
 }
-.container header img {
-  width: 80%;
+.container header .idiv1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container header .idiv1 img {
+  width: 30%;
+  border: 0.1rem solid black;
+  margin-top: 1rem;
 }
 .container header h1 {
   font-size: 4rem;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-bottom: 0.5rem;
 }
-header {
-  width: 60%;
-  border: 10px dotted blue;
+.container .aboutme {
+  border: 0.1rem solid black;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-p {
-  font-size: 3rem;
+.container .skills {
+  font-size: 2rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-bottom: 0.5rem;
+  width: 30rem;
+}
+.container .skills h3 {
+  border: 0.1rem solid black;
+}
+.container .skills .skillsdiv h4 {
+  border: 0.1rem solid black;
+}
+.container .workhistory {
+  font-size: 2rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+.container .workhistory .workhistorydiv {
+  display: flex;
+  justify-content: space-evenly;
 }

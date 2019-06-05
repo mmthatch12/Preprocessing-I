@@ -20,7 +20,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 62.5%;
+	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -58,9 +58,13 @@ html, body {
 	height: 100%;
 }
 
-@paragraphs: 3rem;
+@paragraphs: 1rem;
 
 @bgcolor: lightgrey;
+
+@bordered: .1rem solid black;
+
+@fontfam: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 .navstyle {
 	display: flex;
@@ -70,16 +74,37 @@ html, body {
 
 .navstyle1 {
 	text-decoration: none;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.headerstyle {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .h1style {
 	font-size: 4rem;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;	
+	padding-bottom: .5rem;
+}
+
+.h4style {
+	font-size: 2rem;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;	
+	padding-bottom: .5rem;
+}
+
+.sectionstyle {
+	border: @bordered;
+	font-family: @fontfam;
+
 }
 
 .container {
-	width: 800px;
+	width: 1000px;
 	background: @bgcolor;
+	margin: 0 auto;
 
 	nav {
 		.navstyle();
@@ -90,24 +115,51 @@ html, body {
 	}
 
 	header {
-		width: 60%;
-		border: 10px dotted blue;
-	img {
-		width: 80%;
+		.headerstyle();
+		width: 100%;
+		border: @bordered;
+
+		.idiv1	{
+			.headerstyle();
+		
+			img {
+				width: 30%;
+				border: @bordered;
+				margin-top: 1rem;
+			}
+		}
+		h1 {
+			.h1style();
+		}
 	}
-	h1 {
-		.h1style();
+
+	.aboutme {
+		border: @bordered;
+		font-family: @fontfam;
 	}
+
+	.skills {
+		.h4style();
+		width: 30rem;
+		
+		h3 {
+			border: @bordered;
+		}	
+			.skillsdiv h4 {
+				border: @bordered;
+			}
 	}
+
+	.workhistory {
+		.h4style();
+		text-align: center;
+		.workhistorydiv {
+			display: flex;
+			justify-content: space-evenly;
+		}
+	}
+
 }
 
-header {
-	width: 60%;
-	border: 10px dotted blue;
-}
-
-p {
-	font-size: @paragraphs;
-}
 
 

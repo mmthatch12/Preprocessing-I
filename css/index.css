@@ -86,7 +86,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 62.5%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -133,4 +133,46 @@ table {
 html,
 body {
   height: 100%;
+}
+.navstyle {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.navstyle1 {
+  text-decoration: none;
+}
+.h1style {
+  font-size: 4rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container {
+  width: 800px;
+  background: lightgrey;
+}
+.container nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.container nav a {
+  text-decoration: none;
+}
+.container header {
+  width: 60%;
+  border: 10px dotted blue;
+}
+.container header img {
+  width: 80%;
+}
+.container header h1 {
+  font-size: 4rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header {
+  width: 60%;
+  border: 10px dotted blue;
+}
+p {
+  font-size: 3rem;
 }

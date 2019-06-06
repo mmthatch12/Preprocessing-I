@@ -1,1 +1,315 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.navstyle {
+  height: 4rem;
+  display: flex;
+  justify-content: flex-end;
+  background: black;
+  border: 0.1rem solid black;
+  border-bottom: 5px solid white;
+}
+.navstyle1 {
+  text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: white;
+  align-self: flex-end;
+  padding: 0 1rem 0 1rem;
+}
+.headerstyle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.h1style {
+  font-size: 4rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-bottom: 0.5rem;
+}
+.h3style {
+  font-size: 2rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+}
+.h4style {
+  font-size: 1.3rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-bottom: 0.5rem;
+  text-align: left;
+}
+.sectionstyle {
+  border: 0.1rem solid black;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container {
+  width: 1000px;
+  background: lightgrey;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+}
+.container nav {
+  height: 4rem;
+  display: flex;
+  justify-content: flex-end;
+  background: black;
+  border: 0.1rem solid black;
+  border-bottom: 5px solid white;
+}
+.container nav a {
+  text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: white;
+  align-self: flex-end;
+  padding: 0 1rem 0 1rem;
+}
+.container header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border: 0.1rem solid black;
+}
+.container header .idiv1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container header .idiv1 img {
+  width: 30%;
+  border: 0.1rem solid black;
+  margin-top: 1rem;
+}
+.container header h1 {
+  font-size: 4rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-bottom: 0.5rem;
+}
+.container .aboutme {
+  padding: 2rem 0 2rem 0.5rem;
+  font-size: 2rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+}
+.container .aboutme h3 {
+  text-decoration: underline;
+  padding-bottom: 1rem;
+}
+.container .aboutme p {
+  font-size: 1.3rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-bottom: 0.5rem;
+  text-align: left;
+}
+.container .aboutme p strong {
+  font-family: fantasy;
+}
+.container .skills {
+  font-size: 2rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+}
+.container .skills h3 {
+  border: 0.1rem solid black;
+  text-decoration: underline;
+  padding-bottom: 1rem;
+}
+.container .skills .skillimgdiv {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .container .skills .skillimgdiv {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.container .skills .skillimgdiv .socksimdiv img {
+  width: 30rem;
+}
+.container .skills .skillimgdiv .skillsdiv {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container .skills .skillimgdiv .skillsdiv h4 {
+  border: 0.1rem solid black;
+  font-size: 1.3rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-bottom: 0.5rem;
+  text-align: left;
+  height: 80px;
+  padding-top: 30px;
+  text-align: center;
+}
+.container .workhistory {
+  font-size: 2rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  border: 0.1rem solid black;
+}
+.container .workhistory h3 {
+  text-decoration: underline;
+  padding-bottom: 1rem;
+}
+.container .workhistory .whmain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-bottom: 0.5rem;
+  text-align: left;
+}
+@media (max-width: 500px) {
+  .container .workhistory .whmain {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .container .workhistory .whmain .workhistorydiv {
+    border: 0.1rem solid black;
+    text-align: center;
+  }
+}
+.container .workhistory .whmain .workhistorydiv em {
+  text-decoration: underline;
+}

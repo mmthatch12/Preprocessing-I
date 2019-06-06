@@ -32,6 +32,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
@@ -54,6 +55,183 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
 }
+
+@paragraphs: 1rem;
+
+@bgcolor: lightgrey;
+
+@bordered: .1rem solid black;
+
+@fontfam: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+.navstyle {
+	height: 4rem;
+	display: flex;
+	justify-content: flex-end;
+	background: black;
+	border:@bordered;
+	border-bottom: 5px solid white;
+	
+}
+
+.navstyle1 {
+	text-decoration: none;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	color: white;
+	align-self: flex-end;
+	padding: 0 1rem 0 1rem;
+}
+
+.headerstyle {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.h1style {
+	font-size: 4rem;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;	
+	padding-bottom: .5rem;
+}
+
+.h3style {
+	font-size: 2rem;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	text-align: center;
+
+}
+
+.h4style {
+	font-size: 1.3rem;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;	
+	padding-bottom: .5rem;
+	text-align: left;
+}
+
+.sectionstyle {
+	border: @bordered;
+	font-family: @fontfam;
+}
+
+
+.container {
+	width: 1000px;
+	background: @bgcolor;
+	margin: 0 auto;
+
+	@media (max-width:500px) {
+		width: 100%;
+	}
+
+	nav {
+		.navstyle();
+
+		a {
+			.navstyle1();
+		}
+	}
+
+	header {
+		.headerstyle();
+		width: 100%;
+		border: @bordered;
+
+		.idiv1	{
+			.headerstyle();
+		
+			img {
+				width: 30%;
+				border: @bordered;
+				margin-top: 1rem;
+			}
+		}
+		h1 {
+			.h1style();
+		}
+	}
+
+	.aboutme {
+		padding: 2rem 0 2rem .5rem;
+		.h3style();
+		h3 {
+			text-decoration: underline;
+			padding-bottom: 1rem;
+		}
+		p {
+			.h4style();
+			strong {
+				font-family: fantasy;
+			}
+		}
+	}
+
+	.skills {
+		.h3style();
+		h3 {
+			border: @bordered;
+			text-decoration: underline;
+			padding-bottom: 1rem;
+		}	
+		.skillimgdiv {
+			display: flex;
+			justify-content: space-between;
+			@media (max-width:500px) {
+				flex-direction: column;
+				align-items: center;
+			}
+			.socksimdiv img {
+				width: 30rem;
+			}
+			.skillsdiv {
+				width: 30rem;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				
+				h4 {
+					border: @bordered;
+					.h4style();
+					height: 320px / 4;
+					padding-top: 30px;
+					text-align: center;
+
+				}
+			}
+		}
+	}
+
+	.workhistory {
+		.h3style();
+		text-align: center;
+		border: @bordered;
+		h3 {
+			text-decoration: underline;
+			padding-bottom: 1rem;
+		}
+		.whmain {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			.h4style();
+			@media (max-width:500px) {
+				flex-direction: column;
+				align-items: center;
+			}
+			.workhistorydiv {
+				@media (max-width: 500px) {
+					border: @bordered;
+					text-align: center;
+				}	
+				em {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
+}
+
+
 
